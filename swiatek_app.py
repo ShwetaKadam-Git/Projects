@@ -120,7 +120,9 @@ elif section == "Data Visualizations":
 
     if chart_type == "Feature Correlation Heatmap":
         st.subheader("Feature Correlation Heatmap")
-        fig, ax = plt.subplots(figsize=(10, 6))                       
+        fig, ax = plt.subplots(figsize=(10, 6))   
+        df_numeric = df.select_dtypes(include=['number']) 
+        df_numeric = df_numeric.dropna()
         sns.heatmap(df_numeric.corr(), annot=True, cmap="coolwarm", fmt=".2f", ax=ax)
         st.pyplot(fig)
 

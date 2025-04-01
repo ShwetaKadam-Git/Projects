@@ -1,4 +1,4 @@
-# Projects
+# Project Details
 This project analyzes Iga Swiatek's match performance using a dataset containing 320 matches. It provides various insights, including summary statistics, opponent-based trends, match duration trends, and visualization of key performance metrics. The analysis is presented in an interactive Streamlit dashboard.
 
 Features of the Project - 
@@ -25,4 +25,19 @@ The Data Visualizations section enables users to explore different match trends 
  - Matplotlib & Seaborn – Data visualization
  - OpenPyXL – Excel file handling
 
+4. File Structure
+Tennis_Analysis/
+-  📄 swiatek_app.py            # Streamlit Dashboard
+-  📄 EDAForIga.py              # Exploratory Data Analysis
+-  📄 Iga_Cleaned.xlsx          # Cleaned dataset (320 matches)
+-  📄 README.md                 # Project documentation
+
+6. Key Takeaways from the Analysis
+ - Iga Swiatek has a high win percentage, with consistent performance across surfaces.
+ - Opponent analysis reveals players against whom she performs best and worst.
+
+6. Future Improvements
+ - Consider varied sample data in order to analyse the performance better and understand key performance indicators
+ - Add predictive modeling for match outcome prediction with much more detailed dataset and parameters
+ - Perform deeper time-series analysis to track performance trends over seasons with respect to different surfaces
 

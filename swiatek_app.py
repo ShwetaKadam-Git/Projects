@@ -120,13 +120,8 @@ elif section == "Data Visualizations":
 
     if chart_type == "Feature Correlation Heatmap":
         st.subheader("Feature Correlation Heatmap")
-        fig, ax = plt.subplots(figsize=(10, 6))
-        st.write("head")
-        st.write(df.head())  # Check if df is loaded
-        st.write("numerichead")
-        #st.write(df_numeric.head())  # Check if df_numeric exists
-
-        sns.heatmap(df.corr(), annot=True, cmap="coolwarm", fmt=".2f", ax=ax)
+        fig, ax = plt.subplots(figsize=(10, 6)   
+        sns.heatmap(df_numeric.corr(), annot=True, cmap="coolwarm", fmt=".2f", ax=ax)
         st.pyplot(fig)
 
     elif chart_type == "Wins & Losses vs Opponents":

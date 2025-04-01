@@ -112,7 +112,6 @@ elif section == "Data Visualizations":
             "Feature Correlation Heatmap",
             "Wins & Losses vs Opponents",
             "Distribution of Winners (Histogram)",
-            "Histogram of Winners",
             "Boxplot of UFEs",
             "Heatmap of Win/Loss per opponent",
         ],
@@ -145,10 +144,10 @@ elif section == "Data Visualizations":
         plt.ylabel("Number of Winners")
         st.pyplot(fig)
 
-    elif chart_type == "Histogram of Winners":
-        fig, ax = plt.subplots()
-        sns.histplot(df["Winners"], bins=30, ax=ax)
-        st.pyplot(fig)
+    #elif chart_type == "Histogram of Winners":
+      #  fig, ax = plt.subplots()
+      #  sns.histplot(df["Winners"], bins=30, ax=ax)
+      # st.pyplot(fig)
         #st.write("Top Opponents by Avg Winner/Error Ratio")
         #top_opponents = df.groupby("Opponent")["Ratio:W/UFEs"].mean().sort_values(ascending=False).head(10)
         #st.dataframe(top_opponents)

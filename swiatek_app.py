@@ -5,7 +5,7 @@ import io
 import scipy.stats as stats
 
 # Load dataset
-df = pd.read_excel("C:/Users/DELL/PycharmProjects/PythonProject/Tennis/Iga_Cleaned.xlsx")
+df = pd.read_excel("Iga_Cleaned.xlsx")
 
 st.title("Iga Swiatek's Performance Analysis w.r.t W/UFEs ")
 st.write(f"Sample data includes matches between - 2018 Prague Open to 2025 Indian Wells (Few match stats are missing in the data)")

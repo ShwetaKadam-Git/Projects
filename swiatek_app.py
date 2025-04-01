@@ -124,9 +124,9 @@ elif section == "Data Visualizations":
         st.write("head")
         st.write(df.head())  # Check if df is loaded
         st.write("numerichead")
-        st.write(df_numeric.head())  # Check if df_numeric exists
+        #st.write(df_numeric.head())  # Check if df_numeric exists
 
-        sns.heatmap(df_numeric.corr(), annot=True, cmap="coolwarm", fmt=".2f", ax=ax)
+        sns.heatmap(df.corr(), annot=True, cmap="coolwarm", fmt=".2f", ax=ax)
         st.pyplot(fig)
 
     elif chart_type == "Wins & Losses vs Opponents":

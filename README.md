@@ -1,6 +1,8 @@
 # Project Details
 This project analyzes Iga Swiatek's match performance using a dataset containing 320 matches. It provides various insights, including summary statistics, opponent-based trends, match duration trends, and visualization of key performance metrics. The analysis is presented in an interactive Streamlit dashboard.
 
+**Streamlit application link** - https://tennisanalysis.streamlit.app/
+
 Features of the Project - 
 
 **1. Summary Statistics**
